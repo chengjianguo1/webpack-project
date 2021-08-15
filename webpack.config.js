@@ -56,7 +56,7 @@ module.exports = {
           }
         ]
       },
-      {//我们自己的代码都是less
+      {
         test: /\.less$/,
         use: [
           "style-loader",
