@@ -1,0 +1,101 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Users\whhji\AppData\Roaming\npm\node_modules\yarn\bin\yarn.js
+
+PATH: 
+  C:\Program Files (x86)\Common Files\NetSarang;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\TortoiseGit\bin;D:\python\PyCharm 2018.3.3;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;D:\Git\cmd;D:\docker\Docker Toolbox;C:\Users\whhji\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\whhji\AppData\Local\Microsoft\WindowsApps;D:\python\PyCharm 2018.3.3\bin;;D:\jiaoyi\wind\bin\;D:\vscode\Microsoft VS Code\bin;D:\docker\Docker Toolbox;C:\Program Files\Docker Toolbox;D:\docker\Docker Toolbox;C:\Users\whhji\AppData\Roaming\npm;C:\Users\whhji\AppData\Roaming\nvm;C:\Program Files\nodejs
+
+Yarn version: 
+  1.22.5
+
+Node version: 
+  12.16.3
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: ENOENT: no such file or directory, copyfile 'C:\Users\whhji\AppData\Local\Yarn\Cache\v6\npm-get-stream-4.1.0-c1b255575f3dc21d59bfc79cd3d2b46b1c3a54b5-integrity\node_modules\get-stream\buffer-stream.js' -> 'D:\axe-ui-compoent\webpack-project-demo\node_modules\bin-version\node_modules\get-stream\buffer-stream.js'
+
+npm manifest: 
+  {
+    "name": "webpack-project-demo",
+    "version": "1.0.0",
+    "description": "webpack-config",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "dev": "node ./scripts/dev.js",
+      "build": "webpack webpack.config.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/core": "^7.13.13",
+      "@babel/plugin-proposal-class-properties": "^7.13.0",
+      "@babel/plugin-proposal-decorators": "^7.13.5",
+      "@babel/preset-env": "^7.13.12",
+      "@babel/preset-react": "^7.13.13",
+      "and": "^0.0.3",
+      "babel-eslint": "^10.1.0",
+      "babel-loader": "^8.2.2",
+      "clean-webpack-plugin": "^3.0.0",
+      "copy-webpack-plugin": "^8.1.0",
+      "cross-env": "^7.0.3",
+      "css-loader": "^5.2.0",
+      "dotenv": "^8.2.0",
+      "dotenv-expand": "^5.1.0",
+      "eslint": "^7.23.0",
+      "eslint-config-airbnb": "^18.2.1",
+      "eslint-loader": "^4.0.2",
+      "eslint-plugin-import": "^2.22.1",
+      "eslint-plugin-jsx-a11y": "^6.4.1",
+      "eslint-plugin-react": "^7.23.1",
+      "eslint-plugin-react-hooks": "^4.2.0",
+      "file-loader": "^6.2.0",
+      "filemanager-webpack-plugin": "^4.0.0",
+      "html-loader": "^2.1.2",
+      "html-webpack-plugin": "^5.3.1",
+      "koa": "^2.13.1",
+      "koa-static": "^5.0.0",
+      "less": "^4.1.1",
+      "less-loader": "^8.0.0",
+      "lib-flexible": "^0.3.2",
+      "mini-css-extract-plugin": "^1.4.0",
+      "node-sass": "^5.0.0",
+      "optimize-css-assets-webpack-plugin": "^6.0.1",
+      "postcss-loader": "^5.2.0",
+      "postcss-preset-env": "^6.7.0",
+      "px2rem-loader": "^0.1.9",
+      "raw-loader": "^4.0.2",
+      "sass-loader": "^11.0.1",
+      "style-loader": "^2.0.0",
+      "url-loader": "^4.1.1",
+      "webpack": "^5.28.0",
+      "webpack-cli": "^4.6.0",
+      "webpack-dev-middleware": "^3.6.0",
+      "webpack-dev-server": "^3.11.2",
+      "webpack-hot-middleware": "^2.25.0"
+    },
+    "browserslist": {
+      "development": [
+        "last 100 chrome version",
+        "last 100 firefox version",
+        "last 100 safari version"
+      ],
+      "production": [
+        ">1%"
+      ]
+    },
+    "dependencies": {
+      "expose-loader": "^2.0.0",
+      "express": "^4.17.1",
+      "image-webpack-loader": "^7.0.1",
+      "react": "^17.0.2",
+      "react-dom": "^17.0.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
