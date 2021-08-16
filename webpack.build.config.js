@@ -3,8 +3,8 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 //process.env.NODE_ENV == 'production' ? 'production' : 'development';
 module.exports = {
-  mode: process.env.NODE_ENV == "production" ? "production" : "development", //默认是开发模块
-  entry: "./src/index.tsx",
+  mode: "production", //默认是开发模块
+  entry: "./src/index.jsx",
   output: {
     path: path.join(__dirname, "dist"),
     filename: "main.js",

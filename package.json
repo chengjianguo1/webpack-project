@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "webpack-config",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "node ./scripts/dev.js",
-    "dev:build": "webpack serve",
+    "dev:build": "node ./scripts/dev.js mode=build",
+    "dev": "node ./scripts/dev.js mode=dev",
+    "dev:remote": "node ./scripts/dev.js mode=remote",
     "build": "webpack"
   },
   "author": "",
