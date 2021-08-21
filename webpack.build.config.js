@@ -1,6 +1,8 @@
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
+const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
+
 //process.env.NODE_ENV == 'production' ? 'production' : 'development';
 module.exports = {
   mode: "production", //默认是开发模块
@@ -10,6 +12,10 @@ module.exports = {
     filename: "main.js",
   },
   devtool: "source-map",
+  optimization: {
+    // 它可能会合并webpack-bundle-analyzer 输出中的模块的一部分，从而使报告不太详细。 如果你使用此插件，请在分析过程中将其禁用
+    concatenateModules: false,
+  },
   devServer: {
     hot: true, //热更新插件
     contentBase: path.join(__dirname, "dist"),
@@ -94,5 +100,6 @@ module.exports = {
       inject: "body"
     }),
     new webpack.HotModuleReplacementPlugin(),
+    new BundleAnalyzerPlugin(),
   ],
 };
