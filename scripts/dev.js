@@ -72,7 +72,7 @@ if (argvObj.mode === 'dev' || argvObj.mode === 'remote') {
   // remote 联调模式
   if (argvObj.mode === 'remote') {
     Object.keys(proxyConfig).forEach(key => {
-      console.log(item);
+      console.log(key);
       app.use(key, proxy(proxyConfig[key]));
     })
   };
@@ -91,7 +91,7 @@ if (argvObj.mode === 'dev' || argvObj.mode === 'remote') {
   const port = 5123;
   const uri = `http://localhost:${port}`;
   webpackDevMiddleware.waitUntilValid(() => {
-      console.log(`Listening at ${uri}.\n`)
+      console.log(`Listening at \n${uri}\n`)
       opn(`${uri}`, {app: ['google chrome', '--incognito']});
       console.log(`${config.output.path}`);
   });
