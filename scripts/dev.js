@@ -80,7 +80,7 @@ if (argvObj.mode === 'dev' || argvObj.mode === 'remote') {
   // 本地mock
   app.use(function(req, res, next) {
       const mockFilePath = path.join(__dirname, '../', 'mock', req.path);
-      console.log(mockFilePath);
+      console.log(mockFilePath, '----');
       if (fs.existsSync(mockFilePath)) {
           res.set('Content-Type', 'application/json; charset=UTF-8');
           res.send(fs.readFileSync(mockFilePath));
